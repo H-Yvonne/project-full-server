@@ -23,12 +23,8 @@
   "engines": {
     "node": ">=10.0.0"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run test"
-    }
-  },
   "scripts": {
+    "prepare": "husky install",
     "start": "egg-scripts start --daemon --title=egg-server-server",
     "stop": "egg-scripts stop --title=egg-server-server",
     "dev": "egg-bin dev",
